@@ -1,0 +1,26 @@
+.Drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background-color: beige;
+  transition: transform .5s;
+}
+.Drawer.open {
+  transform: translateX(0);
+}
+.Drawer.close {
+  transform: translateX(-100%);
+}
+.Drawer ul {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (min-width: 300px) {
+  .Drawer {
+    display: none;
+  }
+}

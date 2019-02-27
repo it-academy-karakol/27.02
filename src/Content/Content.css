@@ -1,6 +1,11 @@
-
 .Content {
-  flex-grow: 1;
+  width: calc(100% - 150px);
 
   background-color: green;
+}
+
+@media (max-width: 300px) {
+  .Content {
+    width: 100%;
+  }
 }
